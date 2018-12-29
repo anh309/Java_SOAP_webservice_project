@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{margin:0; padding:0;}
+.container{width:1200px ; margin:0 auto; min-height:1000px; padding: 0}
+header{box-shadow:0 3px 3px #666666; padding-top:10px }
+.logo-01{min-height:60px}
+.top-20px{margin-top:20px}
+/*menu*/ 
+/*
+header{position:fixed; width:90%; z-index:1}*/
+.menu .icon-menu:hover a{background-color:#06F }
+.menu ul{background-color:#06F}
+.menu ul li{display:inline-block; width:120px;  text-align:center; position: relative}
+.menu ul li a{word-spacing:4px; font-size:18px; text-decoration:none; color:#FFF; line-height:40px ; display:block; }
+.menu ul li a:hover{background-color:#CFC ; color:#F00;  }
+.menu ul ul{position: absolute; top: 60px;  background-color: #FFFFFF; transition: all 1s; visibility: hidden; opacity: 0; z-index: 100}
+.menu ul ul li { background-color: #06F ; line-height: 35px; border-bottom:2px dashed #BF0105}
+.menu ul li:hover >ul{top: 40px; visibility: visible; opacity: 1;}
+
+
+
+.icon-fixed{position:fixed; top:500px; left:15px;}
+.icon-fixed a span{color:#06F; text-decoration:none}
+.icon-fb:hover, .icon-twiter:hover, .icon-google:hover, .icon-top{color:#039}
+.icon-top{position:fixed; bottom:20px; right:50px}
+
+footer{ clear:both;min-height:300px; border:1px solid; margin-top:20px}
+.logo-01{text-align:center}
+.img-logo{width:50px; height:auto;}
+  
+  
