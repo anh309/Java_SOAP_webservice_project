@@ -1,0 +1,49 @@
+<!-- Use this file to deploy some handlers/chains and services      -->
+<!-- Two ways to do this:                                           -->
+<!--   java org.apache.axis.client.AdminClient deploy.wsdd          -->
+<!--      after the axis server is running                          -->
+<!-- or                                                             -->
+<!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   -->
+<!--      from the same directory that the Axis engine runs         -->
+
+<deployment
+    xmlns="http://xml.apache.org/axis/wsdd/"
+    xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from AService WSDL service -->
+
+  <service name="A" provider="java:RPC" style="wrapped" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://a"/>
+      <parameter name="wsdlServiceElement" value="AService"/>
+      <parameter name="schemaQualified" value="http://a"/>
+      <parameter name="wsdlServicePort" value="A"/>
+      <parameter name="className" value="a.ASoapBindingImpl"/>
+      <parameter name="wsdlPortType" value="A"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <operation name="hi" qname="operNS:hi" xmlns:operNS="http://a" returnQName="retNS:hiReturn" xmlns:retNS="http://a" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:acc" xmlns:pns="http://a" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:pass" xmlns:pns="http://a" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="diemTBTL" qname="operNS:diemTBTL" xmlns:operNS="http://a" returnQName="retNS:diemTBTLReturn" xmlns:retNS="http://a" returnType="rtns:float" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="timKiemTT" qname="operNS:timKiemTT" xmlns:operNS="http://a" returnQName="retNS:timKiemTTReturn" xmlns:retNS="http://a" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:info" xmlns:pns="http://a" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="dangKy" qname="operNS:dangKy" xmlns:operNS="http://a" returnQName="retNS:dangKyReturn" xmlns:retNS="http://a" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:acc" xmlns:pns="http://a" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:pass" xmlns:pns="http://a" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:email" xmlns:pns="http://a" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:mssv" xmlns:pns="http://a" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:hoTen" xmlns:pns="http://a" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:Phai" xmlns:pns="http://a" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:lop" xmlns:pns="http://a" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:namNhapHoc" xmlns:pns="http://a" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:namSinh" xmlns:pns="http://a" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:que" xmlns:pns="http://a" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="whoami" qname="operNS:whoami" xmlns:operNS="http://a" returnQName="retNS:whoamiReturn" xmlns:retNS="http://a" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <parameter name="allowedMethods" value="hi whoami diemTBTL timKiemTT dangKy"/>
+
+  </service>
+</deployment>
