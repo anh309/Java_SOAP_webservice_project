@@ -1,0 +1,8 @@
+@charset "utf-8";
+/* CSS Document */
+.Blog{margin-top: 30px}
+.content-BLog-01{border: 1px solid; height: 1000px ;}
+.left-Blog-01{border: 1px solid #22FF00; height: 400px ;border-radius: 10px; overflow: hidden}
+.tag-Blog-01{border: 1px solid #DC0003; height: 300px ; margin-top: 20px ; background-color: #E9E9E9; border-radius: 10px}
+.test-Blog{border: 1px solid #FCE300; height: 200px; margin-top: 40px; clear: both; margin-bottom: 30px}
+input:focus{background-color: aqua; }
