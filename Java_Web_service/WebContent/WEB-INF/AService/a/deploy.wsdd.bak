@@ -29,6 +29,8 @@
       <operation name="timKiemTT" qname="operNS:timKiemTT" xmlns:operNS="http://a" returnQName="retNS:timKiemTTReturn" xmlns:retNS="http://a" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
         <parameter qname="pns:info" xmlns:pns="http://a" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
       </operation>
+      <operation name="whoami" qname="operNS:whoami" xmlns:operNS="http://a" returnQName="retNS:whoamiReturn" xmlns:retNS="http://a" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
       <operation name="dangKy" qname="operNS:dangKy" xmlns:operNS="http://a" returnQName="retNS:dangKyReturn" xmlns:retNS="http://a" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
         <parameter qname="pns:acc" xmlns:pns="http://a" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
         <parameter qname="pns:pass" xmlns:pns="http://a" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
@@ -40,8 +42,6 @@
         <parameter qname="pns:namNhapHoc" xmlns:pns="http://a" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
         <parameter qname="pns:namSinh" xmlns:pns="http://a" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
         <parameter qname="pns:que" xmlns:pns="http://a" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
-      </operation>
-      <operation name="whoami" qname="operNS:whoami" xmlns:operNS="http://a" returnQName="retNS:whoamiReturn" xmlns:retNS="http://a" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
       </operation>
       <parameter name="allowedMethods" value="hi whoami diemTBTL timKiemTT dangKy"/>
 
