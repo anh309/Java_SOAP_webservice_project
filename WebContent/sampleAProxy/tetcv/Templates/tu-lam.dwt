@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Trang Chủ</title>
+<!-- TemplateEndEditable -->
+<link rel="stylesheet" type="text/css" href="../css/main.css"/>
+<link rel="stylesheet" type="text/css" href="../css/templates-css.css"/>
+<link rel="stylesheet" type="text/css" href="../css/font-main.css"/>
+<link rel="stylesheet" type="text/css" href="../css/fa-svg-with-js.css"/>
+<script type="text/javascript" src="../js/fontawesome-all.js"></script>
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<script type="text/javascript" src="../js/jssor.slider-27.1.0.min.js"></script>
+<script type="text/javascript" src="../js/js-01.js"></script>
+
+<script type="text/javascript" src="js/fa-brands.min.js"></script>
+
+<script type="text/javascript" src="js/fa-regular.min.js"></script>
+
+<script type="text/javascript" src="js/fa-solid.min.js"></script>
+
+<script type="text/javascript" src="js/fa-v4-shims.min.js"></script>
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+
+<body class="container">
+<header>
+  <div class="nav">
+    
+    <div  class="menu">
+      <ul>
+        <li class="icon-menu"><a href="../TrangChu.html"><img src="../img/Logo-01.png" class="img-logo" alt="logo"/></a></li>
+        <li><a href="../TrangChu.html">Trang chủ</a></li>
+        <li><a href="../GioiThieu.html">Giới thiệu</a></li>
+        <li><a href="../Blog.html">Blog</a></li>
+        <li><a href="../Anh.html">Ảnh</a></li>
+        <li><a href="../NhaToi.html">Nhà tôi</a></li>
+        <li><a href="../Que.html">Quê</a></li>
+        <li> <a href="">Page PT <span class="glyphicon glyphicon-triangle-bottom"></span></a>
+			<ul>
+				<li><a href="../PagePT.html">Test 1</a></li>
+				<li><a href="../CV.html">CV</a></li>
+				<li><a href="#">Test 3</a></li>
+			</ul>  
+		</li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<!--main--><!-- TemplateBeginEditable name="main" -->
+<main></main>
+<!-- TemplateEndEditable --><!--Main the end-->
+<div class="icon-fixed  "><a href="#" >
+  <span class="fa fa-facebook-square fa-2x icon-fb"></span></a> <br>
+  <a href="#"> <span  class="fa fa-twitter-square fa-2x icon-twiter"></span></a><br>
+  <a href="#"> <span class="fa fa-google-plus-square fa-2x icon-google"></span></a></div>
+<div class="icon-top"> <a href="#"><span class="fa fa-chevron-circle-up fa-2x"></span></a></div>
+<footer>
+  <div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d1941.1395804315487!2d109.22581910792519!3d13.332903057571157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m5!1s0x316f9785062a7545%3A0xee93103dc59cd58e!2zTmjDoCB0aOG7nSBN4bqxbmcgTMSDbmcsIEFuIFRo4bqhY2gsIFR1eSBBbiwgUGjDuiBZw6puLCBWaeG7h3QgTmFt!3m2!1d13.334140099999999!2d109.2259595!4m3!3m2!1d13.331216999999999!2d109.2272613!5e0!3m2!1svi!2s!4v1519972893381" width="600" height="350" frameborder="0" style="border:1px solid #000" allowfullscreen></iframe>
+  </div>
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="../js/bootstrap.min.js"></script>
+</body>
+</html>
