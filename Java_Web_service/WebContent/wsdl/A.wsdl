@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://a" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://a" xmlns:intf="http://a" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://a" xmlns="http://www.w3.org/2001/XMLSchema">
+   <element name="hi">
+    <complexType>
+     <sequence>
+      <element name="acc" type="xsd:string"/>
+      <element name="pass" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="hiResponse">
+    <complexType>
+     <sequence>
+      <element name="hiReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="diemTBTL">
+    <complexType/>
+   </element>
+   <element name="diemTBTLResponse">
+    <complexType>
+     <sequence>
+      <element name="diemTBTLReturn" type="xsd:float"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="timKiemTT">
+    <complexType>
+     <sequence>
+      <element name="info" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="timKiemTTResponse">
+    <complexType>
+     <sequence>
+      <element name="timKiemTTReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="dangKy">
+    <complexType>
+     <sequence>
+      <element name="acc" type="xsd:string"/>
+      <element name="pass" type="xsd:string"/>
+      <element name="email" type="xsd:string"/>
+      <element name="mssv" type="xsd:string"/>
+      <element name="hoTen" type="xsd:string"/>
+      <element name="Phai" type="xsd:string"/>
+      <element name="lop" type="xsd:string"/>
+      <element name="namNhapHoc" type="xsd:string"/>
+      <element name="namSinh" type="xsd:string"/>
+      <element name="que" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="dangKyResponse">
+    <complexType>
+     <sequence>
+      <element name="dangKyReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="whoami">
+    <complexType/>
+   </element>
+   <element name="whoamiResponse">
+    <complexType>
+     <sequence>
+      <element name="whoamiReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="diemTBTLResponse">
+
+      <wsdl:part element="impl:diemTBTLResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="hiResponse">
+
+      <wsdl:part element="impl:hiResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="timKiemTTResponse">
+
+      <wsdl:part element="impl:timKiemTTResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="dangKyRequest">
+
+      <wsdl:part element="impl:dangKy" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="dangKyResponse">
+
+      <wsdl:part element="impl:dangKyResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="whoamiResponse">
+
+      <wsdl:part element="impl:whoamiResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="hiRequest">
+
+      <wsdl:part element="impl:hi" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="diemTBTLRequest">
+
+      <wsdl:part element="impl:diemTBTL" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="whoamiRequest">
+
+      <wsdl:part element="impl:whoami" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="timKiemTTRequest">
+
+      <wsdl:part element="impl:timKiemTT" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="A">
+
+      <wsdl:operation name="hi">
+
+         <wsdl:input message="impl:hiRequest" name="hiRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:hiResponse" name="hiResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="diemTBTL">
+
+         <wsdl:input message="impl:diemTBTLRequest" name="diemTBTLRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:diemTBTLResponse" name="diemTBTLResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="timKiemTT">
+
+         <wsdl:input message="impl:timKiemTTRequest" name="timKiemTTRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:timKiemTTResponse" name="timKiemTTResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="dangKy">
+
+         <wsdl:input message="impl:dangKyRequest" name="dangKyRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:dangKyResponse" name="dangKyResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="whoami">
+
+         <wsdl:input message="impl:whoamiRequest" name="whoamiRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:whoamiResponse" name="whoamiResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="ASoapBinding" type="impl:A">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="hi">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="hiRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="hiResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="diemTBTL">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="diemTBTLRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="diemTBTLResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="timKiemTT">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="timKiemTTRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="timKiemTTResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="dangKy">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="dangKyRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="dangKyResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="whoami">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="whoamiRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="whoamiResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="AService">
+
+      <wsdl:port binding="impl:ASoapBinding" name="A">
+
+         <wsdlsoap:address location="http://localhost:8080/Javac/services/A"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>
