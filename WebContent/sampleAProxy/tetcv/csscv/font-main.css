@@ -1,0 +1,5 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face{font-family:ThuPhap;src:url(../fonts/VNI_THUPHAP.TTF)}
+.thuphap{font-family:"ThuPhap";font-size:60px; color:#F00}
