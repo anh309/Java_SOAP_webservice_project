@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin: 0; padding: 0}
+.CV{margin-top: 30px}
+.content-CV-01{ min-height: 1000px ;font-family: Arial, Times New Roman,"serif" ;}
+.left-CV-01{
+	border: 1px solid #22FF00;
+	height: 400px;
+	border-radius: 10px;
+	overflow: scroll
+}
+.tag-CV-01{border: 1px solid #DC0003; height: 300px ; margin-top: 20px ; background-color: #E9E9E9; border-radius: 10px}
+.test-CV{border: 1px solid #FCE300; height: 200px; margin-top: 40px; clear: both; margin-bottom: 30px}
+input:focus{background-color: aqua; }
+
+.left-content-CV{ height: 1030px ; background-color: #178DC7; color: #FBFBFB}
+.main-CV{ height: 1030px ; background-color: #EEEDEA; color:#178DC7 }
+.img-logo-cv {height: 120px; width: 150px; border-radius: 20px 0px 20px 0px ; border: 5px solid #FFFFFF; overflow: hidden; margin-top: 10px}
+.ten-viTri{ text-align: center}
+.hoTen-CV{clear: left;  text-transform: uppercase; font-size: 24px ; padding-top: 15px; font-weight: bold}
+.vitri-CV{font-size: 18px;}
+.icon-CV{ background-color: #FFFFFF; color: #178DC7;}
+.icon-CV02{background-color: #178DC7; color: #FFFFFF;}
+.icon-CV ,.icon-CV02{height: 35px; width: 40px; text-align: center; line-height: 35px ; border-radius: 8px 0 8px 0; float: left}
+
+.fa-sitemap, .fa-flask, .fa-leaf, .fa-star, .fa-graduation-cap, .fa-users, .fa-file-alt, .fa-briefcase, .fa-trophy{padding-top: 5px}
+.thongTinCaNhan, .mucTieuNgheNghiep, .kyNangTieuNgheNghiep, .soThich, .kinhNghiemLamViec, .hoatDong, .chungChi, .giaiThuong{padding-top: 10px; clear: left}
+.hocVan{padding-top: 20px}
+.title-thongTinCaNhan p, .title-mucTieuNgheNghiep p, .title-kyNangTieuNgheNghiep p, .title-soThich p,.title-hocVan p, .title-kinhNghiemLamViec p, .title-hoatDong p, .title-chungChi p, .title-giaiThuong p{font-size: 18px; padding-top: 5px; padding-left: 55px; text-transform: uppercase; }
+.thongTinCaNhan ul li{list-style-type: none; padding-top: 5px; cursor: pointer; clear: left}
+.thongTinCaNhan ul a{color: #FFFFFF; text-decoration: none}
+.thongTinCaNhan ul li span:hover{background-color: #FF0004; color: #008C9E}
+.icon-CV-01{ float: left}
+.icon-CV-01:hover, .icon-CV-01:hover a{text-shadow: 0px 2px 10px  black}
+.p-mucTieuNgheNghiep{height: 200px; border:1px solid #FFFFFF; resize: none; color:  #178DC7; overflow-y: scroll}
+.p-mucTieuNgheNghiep:focus{background-color: #E1E1E1; color: #000000}
+
+.ul-mucTieuNgheNghiep ul{list-style-type: none; margin: 0; padding: 0}
+.circleWhite{height: 20px; width: 20px; background-color: #FFFFFF; float: left; border-radius: 20px; margin-left: 5px}
+.circleWhite-active{margin-left: 40px}
+.circlegreen{height: 20px; width: 20px; background-color:limegreen; float: left; border-radius: 20px; margin-left: 5px}
+.circlegreen-active{margin-left: 40px}
+.ul-mucTieuNgheNghiep ul li{clear: left}
+.ul-mucTieuNgheNghiep p{padding: 0}
+/**/
+
+.ngayThangNamCV{text-align: center;}
+.title-nd-mainCV{font-weight: bold;}
+.title-nd-mainCV, .nd-mainCV01, .ngayThangNamCV{color: #000000}
