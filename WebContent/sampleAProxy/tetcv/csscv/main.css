@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*banner*/
+/*jssor slider loading skin spin css*/
+        .jssorl-009-spin img {
+            animation-name: jssorl-009-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes jssorl-009-spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /*jssor slider bullet skin 052 css*/
+        .jssorb052 .i {position:absolute;cursor:pointer;}
+        .jssorb052 .i .b {fill:#000;fill-opacity:0.3;}
+        .jssorb052 .i:hover .b {fill-opacity:.7;}
+        .jssorb052 .iav .b {fill-opacity: 1;}
+        .jssorb052 .i.idn {opacity:.3;}
+
+        /*jssor slider arrow skin 053 css*/
+        .jssora053 {display:block;position:absolute;cursor:pointer;}
+        .jssora053 .a {fill:none;stroke:#fff;stroke-width:640;stroke-miterlimit:10;}
+        .jssora053:hover {opacity:.8;}
+        .jssora053.jssora053dn {opacity:.5;}
+        .jssora053.jssora053ds {opacity:.3;pointer-events:none;}
+/**/
+
+  
+  
+main{min-height:600px;}
+
+/**/
+.text-tilte-hot{font-size:20px; text-align:center}
+.text-p-hot{margin-left:25px; font-size:16px; font-family:Arial, Helvetica, sans-serif }
+
+.memory{clear:left}
+.video-01{text-align:center}
+.video-youtube-01{width:560px; height:315px; border:0}
+.tieu-de-Hot-01{clear:both}
+.news-box2,.news-box1{border:1px solid; height:400px}
