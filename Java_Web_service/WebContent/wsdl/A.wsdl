@@ -43,6 +43,16 @@ Built on Apr 22, 2006 (06:55:48 PDT)-->
      </sequence>
     </complexType>
    </element>
+   <element name="whoami">
+    <complexType/>
+   </element>
+   <element name="whoamiResponse">
+    <complexType>
+     <sequence>
+      <element name="whoamiReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
    <element name="dangKy">
     <complexType>
      <sequence>
@@ -63,16 +73,6 @@ Built on Apr 22, 2006 (06:55:48 PDT)-->
     <complexType>
      <sequence>
       <element name="dangKyReturn" type="xsd:string"/>
-     </sequence>
-    </complexType>
-   </element>
-   <element name="whoami">
-    <complexType/>
-   </element>
-   <element name="whoamiResponse">
-    <complexType>
-     <sequence>
-      <element name="whoamiReturn" type="xsd:string"/>
      </sequence>
     </complexType>
    </element>
@@ -197,18 +197,6 @@ Built on Apr 22, 2006 (06:55:48 PDT)-->
 
       </wsdl:operation>
 
-      <wsdl:operation name="dangKy">
-
-         <wsdl:input message="impl:dangKyRequest" name="dangKyRequest">
-
-       </wsdl:input>
-
-         <wsdl:output message="impl:dangKyResponse" name="dangKyResponse">
-
-       </wsdl:output>
-
-      </wsdl:operation>
-
       <wsdl:operation name="whoami">
 
          <wsdl:input message="impl:whoamiRequest" name="whoamiRequest">
@@ -216,6 +204,18 @@ Built on Apr 22, 2006 (06:55:48 PDT)-->
        </wsdl:input>
 
          <wsdl:output message="impl:whoamiResponse" name="whoamiResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="dangKy">
+
+         <wsdl:input message="impl:dangKyRequest" name="dangKyRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:dangKyResponse" name="dangKyResponse">
 
        </wsdl:output>
 
@@ -281,24 +281,6 @@ Built on Apr 22, 2006 (06:55:48 PDT)-->
 
       </wsdl:operation>
 
-      <wsdl:operation name="dangKy">
-
-         <wsdlsoap:operation soapAction=""/>
-
-         <wsdl:input name="dangKyRequest">
-
-            <wsdlsoap:body use="literal"/>
-
-         </wsdl:input>
-
-         <wsdl:output name="dangKyResponse">
-
-            <wsdlsoap:body use="literal"/>
-
-         </wsdl:output>
-
-      </wsdl:operation>
-
       <wsdl:operation name="whoami">
 
          <wsdlsoap:operation soapAction=""/>
@@ -310,6 +292,24 @@ Built on Apr 22, 2006 (06:55:48 PDT)-->
          </wsdl:input>
 
          <wsdl:output name="whoamiResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="dangKy">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="dangKyRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="dangKyResponse">
 
             <wsdlsoap:body use="literal"/>
 
